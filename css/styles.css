@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+ul li{
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav-container {
+	width: 170px;
+	height: 170px;
+	background-color: #fffeff;
+	opacity: .95;
+	position: fixed;
+	margin-top: 50px;
+	margin-left: 50px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.nav-container ul {
+margin-top: 10px;
+}
+
+.nav-container h1, nav-container ul {
+	margin-left: 22px;
+}
+
+nav-container h1 a {
+	text-decoration: none;
+	display: block;
+	margin-top: 20px;
+	color: #444;
+	background: url("../images/aw_logo.png") no-repeat left top;
+}
+
+.bg {
+	position: relative;
+	display: block;
+	width: 1008px;
+	height: 672px;
+	left: 0;
+}
