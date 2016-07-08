@@ -1,39 +1,69 @@
-* {
+/*Start with the small screens first and move up in size*/
+
+/*Small Screen should be your first and default styling*/
+
+*:not(body):not(html) {
 	box-sizing: border-box;
 }
 
 ul li{
 	list-style: none;
 	text-decoration: none;
+	display: inline-block;
+}
+
+li a {
+	display: inline-block;;
+	text-decoration: none;
+}
+
+img {
+	margin-top: 100px;
+	/*display: block;*/
+	width: 40%;
+	height: 40%;
+}
+
+.wholebg {
+	background-color: black;
+	background-size: auto;
 }
 
 .nav-container {
-	width: 170px;
-	height: 170px;
+	width: 100%;
+	height: auto;
 	background-color: #fffeff;
-	opacity: .95;
+	opacity: 1.0;
 	position: fixed;
-	margin-top: 50px;
-	margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	top: 0;
 	left: 0;
+	right: 0;
 	z-index: 100;
 }
 
 .nav-container ul {
+margin-left: 0px;
+background-color: #f4f4f4;
+padding-left: 22px;
 margin-top: 10px;
+
 }
 
-.nav-container h1, nav-container ul {
-	margin-left: 22px;
+.nav-container h1 {
+	margin-left: 20px;
 }
 
-nav-container h1 a {
+.nav-container h1 a{
 	text-decoration: none;
 	display: block;
 	margin-top: 20px;
 	color: #444;
-	background: url("../images/aw_logo.png") no-repeat left top;
+	background: url("../awlogo.png") no-repeat left top;
+	text-indent: -9999px;
 }
 
 .bg {
@@ -42,4 +72,70 @@ nav-container h1 a {
 	width: 1008px;
 	height: 672px;
 	left: 0;
+}
+
+.wrap {
+	height:100%;
+}
+ /*Medium Screen Size always use min width*/
+@media screen and (min-width:600px) {
+
+
+}
+
+
+@@media screen and (min-width:1000px) {
+	ul li{
+		list-style: none;
+		text-decoration: none;
+	}
+
+	li a {
+		display: list-item;
+		text-decoration: none;
+	}
+
+	.nav-container {
+		width: 170px;
+		height: 170px;
+		background-color: #fffeff;
+		opacity: .95;
+		position: fixed;
+		margin-top: 50px;
+		margin-left: 50px;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+
+	.nav-container ul {
+	margin-top: 10px;
+	margin-left: 1px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	list-style: none;
+
+	}
+
+	.nav-container h1 {
+		margin-left: 20px;
+	}
+
+	.nav-container h1 a{
+		text-decoration: none;
+		display: block;
+		margin-top: 20px;
+		color: #444;
+		background: url("../awlogo.png") no-repeat left top;
+		text-indent: -9999px;
+	}
+
+	.bg {
+		position: relative;
+		display: block;
+		width: 1008px;
+		height: 672px;
+		left: 0;
+	}
+
 }
