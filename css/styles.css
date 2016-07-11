@@ -14,26 +14,31 @@ ul li{
 }
 
 li a {
-	display: inline-block;;
+	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: black;
 	font-size: 12px;
 }
 
+h1 {
+	padding-top: 20px;
+}
+
 a {
-	display: inline-block;;
+	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
 
 img {
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-bottom: 0;
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 95%;
+	height: auto;
 }
 
 .wholebg {
@@ -47,26 +52,25 @@ img {
 }
 
 .nav-container {
-	width: 100%;
 	height: auto;
 	background-color: #fffeff;
 	opacity: 1.0;
-	position: static;
 	top: 0;
 	left: 0;
 	margin: 20px;
+	position: static;
+	width: 93%;
 }
 
 .nav-container ul {
-	margin-left: 0px;
-	background-color: #f4f4f4;
+	margin-top: 10px;
+	background-color: #f3f3f3;
 	padding-left: 22px;
 	padding-top: 10px;
 	padding-right: 22px;
-	margin-top: 10px;
-	margin-bottom: 0px;
-	margin-right: 10px;
-
+	float: none;
+	overflow: auto;
+	width: 100%;
 }
 
 .nav-container h1 {
@@ -101,19 +105,20 @@ a:hover {
 #project-title {
 	display: block;
 	color: white;
-	position: static;
-	margin-left: 20px;
+	position: absolute;
 	left: 50px;
-	margin-top: 200px;
-	margin-bottom: 0px;
+	width: 100%;
+	height: auto;
 }
 
 #project-location {
 	display: block;
 	color: white;
-	position: static;
-	margin-left: 20px;
+	position: relative;
 	left: 50px;
+	float: right;
+	width: auto;
+	margin-right: 25%;
 }
 
 #featured-head {
@@ -125,11 +130,11 @@ a:hover {
 	padding: 20px;
 	margin-top: 0;
 	font-size: 12px;
-	width: 100%;
-	height: 100%;
+	height: auto;
 	text-transform: uppercase;
 	margin-left: 10px;
 	padding-left: 10px;
+	width: 95%;
 }
 
 #featured-title {
@@ -142,11 +147,13 @@ a:hover {
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-left: 10px;
+	width: 95%;
+	height: auto;
 }
 
 .featured-wrap {
-	width: 100%;
-	height: 100%;
+	width: 95%;
+	height: auto;
 }
 
 #logo {
@@ -157,7 +164,8 @@ p {
 	background-color: white;
 	padding: 20px;
 	margin-left: 10px;
-
+	width: 95%;
+	height: auto;
 }
 
 /*Medium Screen Size always use min width*/
@@ -175,6 +183,7 @@ p {
 	ul li{
 		list-style: none;
 		text-decoration: none;
+		margin: 3px;
 	}
 
 	li a {
@@ -183,44 +192,45 @@ p {
 	}
 
 	.nav-container {
-		width: 170px;
-		height: 170px;
-		background-color: #fffeff;
+		height: auto;
+		background-color: #f4f3f4;
 		opacity: .95;
 		position: fixed;
-		margin-top: 50px;
-		margin-left: 50px;
 		top: 0;
 		left: 0;
 		z-index: 100;
-		overflow: hidden;
+		overflow: visible;
+		float: left;
+		display: block;
+		width: 170px;
 	}
 
 	.nav-container ul {
-		margin-top: 10px;
-		margin-left: 1px;
-		padding-bottom: 10px;
 		text-decoration: none;
 		list-style: none;
 	}
 
 	.nav-container h1 {
-		margin-left: 20px;
+		
 	}
 
-	/*.nav-container h1 a{
+	.nav-container h1 a{
 		text-decoration: none;
-		display: block;
-		margin-top: 20px;
+		display: inline-block;
 		color: #444;
 		background: url("../awlogo.png") no-repeat left top;
 		text-indent: -9999px;
-	}*/
+		width: 170px;
+		height: auto;
+		float: left;
+		visibility: visible;
+		overflow: hidden;
+	}
 
 	#right-content {
 		width: 100%;
 		border-left: none;
-		position: absolute;
+		position: relative;
 		background: #111;
 		height: 30%;
 		min-height: 250px;
@@ -228,6 +238,8 @@ p {
 		left: 0;
 		bottom: 0;
 		border-top: 12px solid #fff;
+		float: right;
+		display: block;
 	}
 
 	#featured-head {
@@ -242,13 +254,15 @@ p {
 		margin-top: 10px;
 		margin-left: 10px;
 		margin-bottom: 0;
-		display: block;
+		display: inline-block;
 		width: 100%;
 		height: 100%;
+		float: left;
 	}
 
 	#logo {
-		display: block;
+		display: inline-block;
+		float: left;
 	}
 
 }
